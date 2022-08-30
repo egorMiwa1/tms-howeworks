@@ -20,7 +20,7 @@ const subjects = {
 const kyes = Object.keys(subjects);
 const sumStudents = Object.values(subjects).reduce(
 	(previousValue, currentValue) => previousValue + currentValue.students,
-	0
+	0,
 );
 const averageStudents = sumStudents / kyes.length;
 const couple = Object.values(subjects);
