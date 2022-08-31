@@ -34,5 +34,5 @@ const averageAmountStu = arrItems.reduce((acc, item) => acc + item.students, 0) 
 console.log(averageAmountStu);
 
 // Получить массив из предметов и отсортировать по количеству преподавателей на факультете от большего к меньшему
-const sortArrItems = arrItems.sort((currentValue, nextValue) => nextValue.students - currentValue.students);
-console.log(sortArrItems);
+const sortedArrItems = arrItems.sort((currentValue, nextValue) => nextValue.students - currentValue.students);
+console.log(sortedArrItems);
