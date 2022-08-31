@@ -16,12 +16,9 @@ const subjects = {
 		teachers: 3,
 	},
 };
-
-const kyes = Object.keys(subjects);
-const sumStudents = Object.values(subjects).reduce(
-	(previousValue, currentValue) => previousValue + currentValue.students,
-	0,
-);
-const averageStudents = sumStudents / kyes.length;
-const couple = Object.values(subjects);
-const loler = couple.sort((a, b) => b.teachers - a.teachers);
+const strSubjects = Object.keys(subjects).join(', ');
+const amountStudents = Object.values(subjects)
+	.reduce((previousValue, currentValue) => previousValue + currentValue.students, 0);
+const averageAmountStudents = amountStudents / Object.keys(subjects).length;
+const coupleKeys = Object.values(subjects);
+const loler = coupleKeys.sort((a, b) => b.teachers - a.teachers);
