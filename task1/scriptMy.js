@@ -26,8 +26,8 @@ const subjects = {
 }
 
 // 1.
-const neWsubjects = Object.keys(subjects);
-console.log(neWsubjects.join(', '));
+const subjectKeys = Object.keys(subjects);
+console.log(subjectKeys.join(', '));
 
 // 2.
 const sumStudents = Object.values(subjects).reduce(
@@ -51,7 +51,7 @@ const newArray = Object.values(subjects);
 console.log(newArray);
 
 // 5.
-const sorting = newArray.sort((a, b) => {
+const arraySortedByTeaches = newArray.sort((a, b) => {
 return b.teachers - a.teachers;
 });
-console.log(sorting);
+console.log(arraySortedByTeaches);
