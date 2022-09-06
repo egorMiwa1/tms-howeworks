@@ -1,15 +1,15 @@
 const subjects = {
   mathematics: {
     students: 200,
-    teachers: 6,
+    teachers: 6
   },
   biology: {
     students: 120,
-    teachers: 6,
+    teachers: 6
   },
   geography: {
     students: 60,
-    teachers: 2,
+    teachers: 2
   },
   chemistry: {
     students: 100,
